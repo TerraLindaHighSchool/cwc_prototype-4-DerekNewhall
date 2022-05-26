@@ -1,83 +1,89 @@
 fileFormatVersion: 2
-guid: 1340630fb7a3267499177be33f281f05
+guid: 576da546347c040428bb0204a37e73d3
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable:
   - first:
       1: 100000
-    second: Moon
+    second: //RootNode
   - first:
       1: 100002
-    second: Moon 1
+    second: Wheel_fl
   - first:
       1: 100004
-    second: //RootNode
+    second: Wheel_fr
   - first:
       1: 100006
-    second: Stars
+    second: Wheel_rl
   - first:
       1: 100008
-    second: Sun
-  - first:
-      1: 100010
-    second: Sun 1
+    second: Wheel_rr
   - first:
       4: 400000
-    second: Moon
+    second: //RootNode
   - first:
       4: 400002
-    second: Moon 1
+    second: Wheel_fl
   - first:
       4: 400004
-    second: //RootNode
+    second: Wheel_fr
   - first:
       4: 400006
-    second: Stars
+    second: Wheel_rl
   - first:
       4: 400008
-    second: Sun
-  - first:
-      4: 400010
-    second: Sun 1
+    second: Wheel_rr
   - first:
       23: 2300000
-    second: Moon 1
+    second: //RootNode
   - first:
       23: 2300002
-    second: //RootNode
+    second: Wheel_fl
   - first:
       23: 2300004
-    second: Stars
+    second: Wheel_fr
   - first:
       23: 2300006
-    second: Sun 1
+    second: Wheel_rl
+  - first:
+      23: 2300008
+    second: Wheel_rr
   - first:
       33: 3300000
-    second: Moon 1
-  - first:
-      33: 3300002
     second: //RootNode
   - first:
+      33: 3300002
+    second: Wheel_fl
+  - first:
       33: 3300004
-    second: Stars
+    second: Wheel_fr
   - first:
       33: 3300006
-    second: Sun 1
+    second: Wheel_rl
+  - first:
+      33: 3300008
+    second: Wheel_rr
   - first:
       43: 4300000
-    second: Skydome
+    second: ST_Veh_Van_Green_Z
   - first:
       43: 4300002
-    second: Stars
+    second: Wheel_rl
   - first:
       43: 4300004
-    second: Sun
+    second: Wheel_fl
   - first:
       43: 4300006
-    second: Moon
+    second: Wheel_rr
+  - first:
+      43: 4300008
+    second: Wheel_fr
   - first:
       95: 9500000
     second: //RootNode
+  - first:
+      41386430: 2186277476908879412
+    second: ImportLogs
   externalObjects: {}
   materials:
     materialImportMode: 0
@@ -109,13 +115,13 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 0.01
+    globalScale: 100
     meshCompression: 0
     addColliders: 0
     useSRGBMaterialColor: 1
     sortHierarchyByName: 1
     importVisibility: 0
-    importBlendShapes: 0
+    importBlendShapes: 1
     importCameras: 0
     importLights: 0
     fileIdsGeneration: 1
@@ -138,17 +144,17 @@ ModelImporter:
     secondaryUVMinLightmapResolution: 40
     secondaryUVMinObjectScale: 1
     secondaryUVPackMargin: 4
-    useFileScale: 0
+    useFileScale: 1
   tangentSpace:
     normalSmoothAngle: 60
-    normalImportMode: 1
-    tangentImportMode: 1
+    normalImportMode: 0
+    tangentImportMode: 0
     normalCalculationMode: 0
     legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 1
     blendShapeNormalImportMode: 1
     normalSmoothingSource: 0
   referencedClips: []
-  importAnimation: 0
+  importAnimation: 1
   humanDescription:
     serializedVersion: 3
     human: []
@@ -160,7 +166,7 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    globalScale: 0.01
+    globalScale: 100
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0
