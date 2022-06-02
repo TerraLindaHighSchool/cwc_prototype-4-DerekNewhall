@@ -31,7 +31,7 @@ public class PlayerController : MonoBehaviour
         horizontalInput = Input.GetAxis("Horizontal");
         transform.Translate(Vector3.forward * Time.deltaTime * speed * forwardInput);
         transform.Rotate(Vector3.up, turnSpeed * horizontalInput * Time.deltaTime);
-        powerupIndicator.transform.position = transform.position + new Vector3(0, 0.5f, 0);
+        powerupIndicator.transform.position = transform.position + new Vector3(0, 1f, 0);
         
         
     }
