@@ -6,10 +6,16 @@ public class PlayerController : MonoBehaviour
 {
     private Rigidbody playerrb;
     private GameObject focalPoint;
-    public float speed = 5.0f;
     public bool hasPowerup;
     private float powerUpStrength = 15.0f;
     public GameObject powerupIndicator;
+    private float speed = 6.5f;
+    private float turnSpeed = 145.0f;
+    private float horizontalInput;
+    private float forwardInput;
+   
+
+    
 
     // Instantiates Rigidbody 
     void Start()
@@ -21,9 +27,13 @@ public class PlayerController : MonoBehaviour
     // Moves player forward based off vertical input buttons
     void Update()
     {
-        float forwardInput = Input.GetAxis("Vertical");
-        playerrb.AddForce(focalPoint.transform.forward * speed * forwardInput);
-        powerupIndicator.transform.position = transform.position + new Vector3(0, -0.5f, 0);
+        forwardInput = Input.GetAxis("Vertical");
+        horizontalInput = Input.GetAxis("Horizontal");
+        transform.Translate(Vector3.forward * Time.deltaTime * speed * forwardInput);
+        transform.Rotate(Vector3.up, turnSpeed * horizontalInput * Time.deltaTime);
+        powerupIndicator.transform.position = transform.position + new Vector3(0, 0.5f, 0);
+        
+        
     }
 
     private void OnTriggerEnter(Collider other)
