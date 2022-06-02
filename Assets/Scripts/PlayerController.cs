@@ -22,6 +22,7 @@ public class PlayerController : MonoBehaviour
     {
         playerrb = GetComponent<Rigidbody>();
         focalPoint = GameObject.Find("Focal Point");
+        
     }
 
     // Moves player forward based off vertical input buttons
@@ -32,6 +33,7 @@ public class PlayerController : MonoBehaviour
         transform.Translate(Vector3.forward * Time.deltaTime * speed * forwardInput);
         transform.Rotate(Vector3.up, turnSpeed * horizontalInput * Time.deltaTime);
         powerupIndicator.transform.position = transform.position + new Vector3(0, 1f, 0);
+        
         
         
     }
@@ -61,7 +63,7 @@ public class PlayerController : MonoBehaviour
 
     IEnumerator PowerupCountdownRoutine()
     {
-        yield return new WaitForSeconds(7);
+        yield return new WaitForSeconds(10);
         hasPowerup = false;
         powerupIndicator.gameObject.SetActive(false);
     }
